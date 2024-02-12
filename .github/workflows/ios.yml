@@ -14,7 +14,7 @@ jobs:
 
       - name: Install Directory
         run: |
-          setup.sh
+          ./setup.sh
 
       - name: Create ExportOptions.plist
         run: |
