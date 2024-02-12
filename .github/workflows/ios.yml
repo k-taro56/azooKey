@@ -9,6 +9,14 @@ jobs:
     runs-on: macos-14
 
     steps:
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install pip
+        run: python -m ensurepip --upgrade
+
       - name: Checkout
         uses: actions/checkout@v4
 
