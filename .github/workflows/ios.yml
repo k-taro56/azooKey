@@ -32,3 +32,12 @@ jobs:
                      -configuration Release \
                      CODE_SIGNING_ALLOWED=NO \
                      build
+
+      - name: Archive Project
+        run: |                        
+          xcodebuild archive -project azooKey.xcodeproj \
+                             -scheme MainApp \
+                             -sdk iphoneos \
+                             -configuration Release \
+                             -archivePath azooKey.xcarchive \
+                             CODE_SIGNING_ALLOWED=NO
