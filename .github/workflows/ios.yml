@@ -1,11 +1,11 @@
-name: Unity iOS Build
+name: Build
 
 on:
   push
 
 jobs:          
-  iOS-build:
-    name: iOS Build
+  build:
+    name: Build
     runs-on: macos-14
 
     steps:
