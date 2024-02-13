@@ -9,30 +9,11 @@ jobs:
     runs-on: macos-14
 
     steps:
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install pip
-        run: python -m ensurepip --upgrade
-
-      - name: Cache dictionary
-        uses: actions/cache@v4
-        with:
-          path: |
-            ./Keyboard
-          key: ${{ runner.os }}-setup-${{ hashFiles('**/setup.sh') }}
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: true
           ref: 'refactoring/add_submodule'
-
-      - name: Install Directory
-        run: |
-          ./setup.sh
 
       - name: Build Project
         run: |
