@@ -17,6 +17,13 @@ jobs:
       - name: Install pip
         run: python -m ensurepip --upgrade
 
+      - name: Cache dictionary
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./Keyboard
+          key: ${{ runner.os }}-setup-${{ hashFiles('**/setup.sh') }}
+
       - name: Checkout
         uses: actions/checkout@v4
 
