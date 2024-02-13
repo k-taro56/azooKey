@@ -49,9 +49,9 @@ jobs:
                      -exportOptionsPlist ExportOptions.plist \
                      -exportPath app.ipa \
                      -allowProvisioningUpdates \
-                     -authenticationKeyPath `pwd`/private_keys/AuthKey_${{ secrets.APPLE_API_ISSUER_ID }}.p8 \
-                     -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
-                     -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
+                     -authenticationKeyPath `pwd`/private_keys/AuthKey_.p8 \
+                     -authenticationKeyID  \
+                     -authenticationKeyIssuerID 
 
       - run: |
           ls -l app.ipa
