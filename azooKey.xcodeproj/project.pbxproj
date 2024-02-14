@@ -1091,7 +1091,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1500;
-				ORGANIZATIONNAME = DevEn3;
+				ORGANIZATIONNAME = k-taro56;
 				TargetAttributes = {
 					1A09114C2A21BF7E00ABFC72 = {
 						CreatedOnToolsVersion = 14.3;
