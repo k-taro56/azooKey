@@ -17,12 +17,11 @@ jobs:
 
       - name: Build Project
         run: |
-          xcodebuild -project azooKey.xcodeproj \
+          xcodebuild build -project azooKey.xcodeproj \
                      -scheme MainApp \
                      -sdk iphoneos \
                      -configuration Release \
                      CODE_SIGNING_ALLOWED=NO \
-                     build
 
       - name: Archive Project
         run: |                        
