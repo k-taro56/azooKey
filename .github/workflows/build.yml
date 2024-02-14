@@ -53,9 +53,6 @@ jobs:
                      -authenticationKeyID ${{ secrets.APPLE_API_KEY_ID }} \
                      -authenticationKeyIssuerID ${{ secrets.APPLE_API_ISSUER_ID }}
 
-      - run: |
-          ls -l app.ipa
-
       - name: Upload IPA to App Store Connect
         run: |
           xcrun altool --upload-app -f app.ipa/azookey.ipa \
