@@ -50,7 +50,7 @@
 			<string>com.hogehoge</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>azooKey</string>
+				<string>hogehoge</string>
 			</array>
 		</dict>
 	</array>
