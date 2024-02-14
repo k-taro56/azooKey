@@ -24,5 +24,4 @@ jobs:
       run: |
         xcodebuild test -project azooKey.xcodeproj \
                         -scheme azooKeyTests \
-                        -sdk iphonesimulator \
                         -destination 'platform=iOS Simulator,name=${{ matrix.device }},OS=${{ matrix.ios-version }}'
