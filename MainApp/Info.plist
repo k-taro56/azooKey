@@ -47,7 +47,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>DevEn3.azooKey</string>
+			<string>com.hogehoge</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>azooKey</string>
