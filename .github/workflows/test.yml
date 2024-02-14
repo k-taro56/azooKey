@@ -15,8 +15,6 @@ jobs:
 
     - run : xcrun simctl list
 
-    - run : xcrun instruments -s
-
     - name: Run tests
       run: |
         xcodebuild test -project azooKey.xcodeproj \
