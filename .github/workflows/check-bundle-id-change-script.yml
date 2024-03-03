@@ -19,5 +19,5 @@ jobs:
           xcodebuild -project azooKey.xcodeproj \
                      -sdk iphoneos \
                      -configuration Release \
-                     -showBuildSettings
+                     -showBuildSettings \
           | grep 'PRODUCT_BUNDLE_IDENTIFIER'
