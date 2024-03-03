@@ -21,3 +21,15 @@ jobs:
                      -configuration Release \
                      -showBuildSettings \
           | grep 'PRODUCT_BUNDLE_IDENTIFIER'
+      - name: Check Bundle Identifier
+        run: |
+          BUNDLE_ID=$(xcodebuild -project azooKey.xcodeproj \
+                                  -sdk iphoneos \
+                                  -configuration Release \
+                                  -showBuildSettings \
+                                  | grep 'PRODUCT_BUNDLE_IDENTIFIER' \
+                                  | sed 's/.*= //')
+          if [ "$BUNDLE_ID" != "DevEn3.azooKey" ]; then
+            echo "Error: PRODUCT_BUNDLE_IDENTIFIER is not DevEn3.azooKey. It is '$BUNDLE_ID'."
+            exit 1
+          fi
