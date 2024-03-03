@@ -20,3 +20,4 @@ jobs:
                      -sdk iphoneos \
                      -configuration Release \
                      -showBuildSettings
+          | grep 'PRODUCT_BUNDLE_IDENTIFIER'
