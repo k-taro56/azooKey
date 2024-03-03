@@ -15,7 +15,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Build Project
-        run: |
+      - run: |
           xcodebuild -project azooKey.xcodeproj \
                      -showBuildSettings
