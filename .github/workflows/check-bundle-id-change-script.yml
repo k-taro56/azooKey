@@ -17,4 +17,6 @@ jobs:
 
       - run: |
           xcodebuild -project azooKey.xcodeproj \
+                     -sdk iphoneos \
+                     -configuration Release \
                      -showBuildSettings
