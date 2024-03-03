@@ -24,6 +24,7 @@ jobs:
                                   -showBuildSettings \
                                   | grep 'PRODUCT_BUNDLE_IDENTIFIER' \
                                   | sed 's/.*= //')
+          echo $BUNDLE_ID
           echo "BUNDLE_ID=$BUNDLE_ID" >> $GITHUB_ENV
 
       - name: Check Bundle Identifier
