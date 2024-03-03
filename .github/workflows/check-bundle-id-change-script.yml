@@ -15,13 +15,8 @@ jobs:
         with:
           submodules: true
 
-      - run: |
-          xcodebuild -project azooKey.xcodeproj \
-                     -sdk iphoneos \
-                     -configuration Release \
-                     -showBuildSettings \
-          | grep 'PRODUCT_BUNDLE_IDENTIFIER'
-      - name: Check Bundle Identifier
+      - name: Extract Bundle Identifier
+        id: extract_bundle_id
         run: |
           BUNDLE_ID=$(xcodebuild -project azooKey.xcodeproj \
                                   -sdk iphoneos \
@@ -29,6 +24,10 @@ jobs:
                                   -showBuildSettings \
                                   | grep 'PRODUCT_BUNDLE_IDENTIFIER' \
                                   | sed 's/.*= //')
+          echo "BUNDLE_ID=$BUNDLE_ID" >> $GITHUB_ENV
+
+      - name: Check Bundle Identifier
+        run: |
           if [ "$BUNDLE_ID" != "DevEn3.azooKey" ]; then
             echo "Error: PRODUCT_BUNDLE_IDENTIFIER is not DevEn3.azooKey. It is '$BUNDLE_ID'."
             exit 1
