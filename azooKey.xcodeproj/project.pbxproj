@@ -65,7 +65,6 @@
 		1A3DC1CA2500D44B002CAA93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DC1C92500D44B002CAA93 /* ContentView.swift */; };
 		1A3DC1CC2500D44E002CAA93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DC1CB2500D44E002CAA93 /* Assets.xcassets */; };
 		1A3DC1CF2500D44E002CAA93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DC1CE2500D44E002CAA93 /* Preview Assets.xcassets */; };
-		1A3DC1D22500D44E002CAA93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DC1D02500D44E002CAA93 /* LaunchScreen.storyboard */; };
 		1A3DC1E82500D44E002CAA93 /* MainAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DC1E72500D44E002CAA93 /* MainAppUITests.swift */; };
 		1A3DC1FC2500D488002CAA93 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DC1FB2500D488002CAA93 /* KeyboardViewController.swift */; };
 		1A3DC2002500D488002CAA93 /* Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A3DC1F92500D488002CAA93 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -177,6 +176,8 @@
 		5592F5AE2AC0395D00AA1325 /* PredictionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598472D2AB84F5200B18C15 /* PredictionManager.swift */; };
 		55950E542AF8E09400ACACAB /* KeyboardExtensionUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 55950E532AF8E09400ACACAB /* KeyboardExtensionUtils */; };
 		5598472E2AB84F5200B18C15 /* PredictionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5598472D2AB84F5200B18C15 /* PredictionManager.swift */; };
+		55A0E0062BC25C5D00D5C644 /* SearchQueriedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A0E0052BC25C5D00D5C644 /* SearchQueriedView.swift */; };
+		55EA62DF2BD4FD4F0056B5BA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 55EA62DE2BD4FCF20056B5BA /* PrivacyInfo.xcprivacy */; };
 		55EE424B2B8091B400C75B3D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 55EE424A2B8091B400C75B3D /* PrivacyInfo.xcprivacy */; };
 		55EE424F2B80B03400C75B3D /* emoji_all_E15.1.txt.gen in Resources */ = {isa = PBXBuildFile; fileRef = 55EE424C2B80B03400C75B3D /* emoji_all_E15.1.txt.gen */; };
 		55EE42502B80B03400C75B3D /* emoji_all_E15.1.txt.gen in Resources */ = {isa = PBXBuildFile; fileRef = 55EE424C2B80B03400C75B3D /* emoji_all_E15.1.txt.gen */; };
@@ -282,7 +283,6 @@
 		1A3DC1C92500D44B002CAA93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A3DC1CB2500D44E002CAA93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3DC1CE2500D44E002CAA93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1A3DC1D12500D44E002CAA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A3DC1D32500D44E002CAA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A3DC1D82500D44E002CAA93 /* azooKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = azooKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3DC1DE2500D44E002CAA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -377,8 +377,9 @@
 		557D9DFC2ABEF6560028F3A0 /* ContactImportSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImportSettingView.swift; sourceTree = "<group>"; };
 		557D9DFE2ABF2B9D0028F3A0 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		557D9E002ABF320F0028F3A0 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		557D9E032ABF3E350028F3A0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5598472D2AB84F5200B18C15 /* PredictionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionManager.swift; sourceTree = "<group>"; };
+		55A0E0052BC25C5D00D5C644 /* SearchQueriedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQueriedView.swift; sourceTree = "<group>"; };
+		55EA62DE2BD4FCF20056B5BA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		55EE424A2B8091B400C75B3D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		55EE424C2B80B03400C75B3D /* emoji_all_E15.1.txt.gen */ = {isa = PBXFileReference; lastKnownFileType = text; name = emoji_all_E15.1.txt.gen; path = Gen/generated/emoji_all_E15.1.txt.gen; sourceTree = SOURCE_ROOT; };
 		55EE424D2B80B03400C75B3D /* emoji_dict_E15.1.txt.gen */ = {isa = PBXFileReference; lastKnownFileType = text; name = emoji_dict_E15.1.txt.gen; path = Gen/generated/emoji_dict_E15.1.txt.gen; sourceTree = SOURCE_ROOT; };
@@ -617,7 +618,6 @@
 				1A9B0A4E25642C23004203BB /* EnableAzooKeyView */,
 				1A64A896257B4AFD0022C081 /* UpdateInformationView.swift */,
 				1A3DC1CB2500D44E002CAA93 /* Assets.xcassets */,
-				1A3DC1D02500D44E002CAA93 /* LaunchScreen.storyboard */,
 				1A60058425275CB9008E2B92 /* Settings.bundle */,
 				1A3DC1D32500D44E002CAA93 /* Info.plist */,
 				1A3DC1CD2500D44E002CAA93 /* Preview Content */,
@@ -657,6 +657,7 @@
 			children = (
 				1AC0315F25120B3B004CA505 /* Keyboard.entitlements */,
 				1A3DC1FD2500D488002CAA93 /* Info.plist */,
+				55EA62DE2BD4FCF20056B5BA /* PrivacyInfo.xcprivacy */,
 				1A09112B2A20B13C00ABFC72 /* Dictionary */,
 				1A1ECCA0295DF8A2001AD7E0 /* Display */,
 			);
@@ -881,6 +882,7 @@
 				1AF679AC25CEE66F00F3987B /* KeyboardPreview.swift */,
 				1A2C293826273E9900DFE465 /* DraggableView.swift */,
 				1AB8C40325E3884200D39BC5 /* BottomSheetView.swift */,
+				55A0E0052BC25C5D00D5C644 /* SearchQueriedView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -1176,7 +1178,6 @@
 				1A1A62FF29C8BCD400EF7B26 /* emoji_genre_E15.0.txt.gen in Resources */,
 				55EE424F2B80B03400C75B3D /* emoji_all_E15.1.txt.gen in Resources */,
 				1A1A62F929C8BCD400EF7B26 /* emoji_all_E15.0.txt.gen in Resources */,
-				1A3DC1D22500D44E002CAA93 /* LaunchScreen.storyboard in Resources */,
 				557D9E012ABF320F0028F3A0 /* Localizable.xcstrings in Resources */,
 				1A1A630829C9C91A00EF7B26 /* emoji_dict_E14.0.txt.gen in Resources */,
 				557D9DFF2ABF2B9D0028F3A0 /* InfoPlist.xcstrings in Resources */,
@@ -1223,6 +1224,7 @@
 				1A1A630B29C9C91A00EF7B26 /* emoji_dict_E13.1.txt.gen in Resources */,
 				1A1A630929C9C91A00EF7B26 /* emoji_dict_E14.0.txt.gen in Resources */,
 				1A1A62F829C8BCD400EF7B26 /* emoji_genre_E13.1.txt.gen in Resources */,
+				55EA62DF2BD4FD4F0056B5BA /* PrivacyInfo.xcprivacy in Resources */,
 				1A09112C2A20B13C00ABFC72 /* Dictionary in Resources */,
 				1A1A62FC29C8BCD400EF7B26 /* emoji_all_E13.1.txt.gen in Resources */,
 				1A1A630029C8BCD400EF7B26 /* emoji_genre_E15.0.txt.gen in Resources */,
@@ -1340,6 +1342,7 @@
 				1AB8C3DE25E2854C00D39BC5 /* CodableActionDataEditor.swift in Sources */,
 				1AF28CE6253CA0F50012CF94 /* KanjiLargeText.swift in Sources */,
 				1A64A8E0257C925E0022C081 /* FontSizeSettingItemView.swift in Sources */,
+				55A0E0062BC25C5D00D5C644 /* SearchQueriedView.swift in Sources */,
 				1A3022AF2631663200E4495C /* OnEnterBackground.swift in Sources */,
 				1A8E454728E1390100133D3B /* MarkedTextSettingView.swift in Sources */,
 				1AB8C3CE25E2509300D39BC5 /* CustomizeTabView.swift in Sources */,
@@ -1463,18 +1466,6 @@
 			targetProxy = 1A3DC1FE2500D488002CAA93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A3DC1D02500D44E002CAA93 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A3DC1D12500D44E002CAA93 /* Base */,
-				557D9E032ABF3E350028F3A0 /* ja */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A0911582A21BF8400ABFC72 /* Debug */ = {
