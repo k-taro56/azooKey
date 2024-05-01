@@ -1,9 +1,7 @@
 name: Build
 
 on:
-  push:
-    branches:
-      - develop
+  push
 
 jobs:          
   build:
@@ -15,14 +13,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
-
-      - name: Build Project
-        run: |
-          xcodebuild build -project azooKey.xcodeproj \
-                     -scheme MainApp \
-                     -sdk iphoneos \
-                     -configuration Release \
-                     CODE_SIGNING_ALLOWED=NO \
 
       - name: Archive Project
         run: |                        
