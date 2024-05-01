@@ -5,9 +5,7 @@
 name: Upload build to App Store Connect
 
 on:
-  push:
-    branches:
-      - develop
+  push
 
 jobs:
   build_and_upload:
