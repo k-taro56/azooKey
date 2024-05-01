@@ -15,10 +15,12 @@ jobs:
     runs-on: macos-latest
 
     steps: 
-    - uses: swift-actions/setup-swift@150267bf6ba01f9d942a4bd55aa2f35ba586767d
+    - uses: swift-actions/setup-swift@cdbe0f7f4c77929b6580e71983e8606e55ffe7e4
       with:
         swift-version: "5.9"
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
     - name: Build
       # TODO: add KeyboardViews
       run: swift build --package-path AzooKeyCore --target SwiftUIUtils;swift build --package-path AzooKeyCore --target KeyboardThemes
